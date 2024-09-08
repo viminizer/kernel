@@ -1,11 +1,11 @@
-#define uint32 unsigned int;
+typedef unsigned short uint16 ;
 
 void kmain(void){
 
     const char *str ="my first kernel";
-    char *vidpts = (char*)0xb8000; //video mem begin at this address
-    uint32 i =0;
-    uint32 j =0;
+    char *vidptr = (char*)0xb8000; //video mem begin at this address
+    uint16 i =0;
+    uint16 j =0;
     //these loops clear the screen
     // there are 25 lines each of 80 cols; each element takes 2 bytes
 
